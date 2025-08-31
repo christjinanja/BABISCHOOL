@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABISCHOOL - Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero-section {
+            background-color: #333;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards;
+        }
+        .section-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: slideIn 1.5s ease-out forwards;
+        }
+        .cta-button {
+            background-color: #00A7E1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+        .cta-button:hover {
+            background-color: #007B9C;
+        }
+        .card {
+            margin: 15px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out 2s forwards;
+        }
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+        .section-container {
+            margin-bottom: 40px;
+        }
+        .section-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes slideIn {
+            0% { transform: translateY(30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="text-center">
+    <a href="#presentation">Présentation</a>
+    <a href="#conditions">Conditions Générales</a>
+    <a href="#about">À propos</a>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <h1 class="display-4 section-title">Découvrez BABISCHOOL</h1>
+    <p class="section-subtitle">L'application dédiée aux parents d’élèves</p>
+    <button class="cta-button" onclick="window.location.href='#presentation'">En savoir plus</button>
+</section>
+
+<!-- Présentation de l'application -->
+<section id="presentation" class="container text-center my-5 fade-in">
+    <h2 class="section-title">Pourquoi choisir BABISCHOOL ?</h2>
+    <p class="section-subtitle">Une application conçue pour accompagner les parents dans le suivi scolaire de leurs enfants.</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="assets/images/WhatsApp Image 2025-08-30 à 22.44.44_d1e2eeb2.jpg" class="card-img-top" alt="Screenshot 1">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="assets/images/WhatsApp Image 2025-08-30 à 22.44.43_3e7fd342.jpg" class="card-img-top" alt="Screenshot 2">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="assets/images/WhatsApp Image 2025-08-30 à 22.44.43_8948c47c.jpg" class="card-img-top" alt="Screenshot 3">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Conditions Générales d’Utilisation -->
+<section id="conditions" class="container my-5 fade-in section-container">
+    <h2 class="section-title">🔹 Conditions Générales d’Utilisation (CGU) – BABISCHOOL</h2>
+    <div class="section-content text-start">
+        <h4>1. Acceptation des conditions</h4>
+        <p>En accédant et en utilisant l’application <em>BABISCHOOL</em>, l’utilisateur reconnaît avoir lu, compris et accepté sans réserve les présentes Conditions Générales d’Utilisation (CGU).</p>
+
+        <h4>2. Objet de l’application</h4>
+        <p>BABISCHOOL est un produit de l’entreprise <em>IPLUS-CI</em>, société de droit ivoirien basée à Abidjan, Yopougon Niangon, au capital social de <strong>1 000 000 F CFA</strong>, enregistrée au <em>CEPICI</em> sous le numéro <em>CI-ABJ-03-2025-B13-05578</em>.</p>
+        <p>L’application permet aux parents d’élèves de suivre, en temps réel et depuis leur smartphone, la scolarité de leurs enfants :</p>
+        <ul>
+            <li>L’emploi du temps</li>
+            <li>Le solde de la scolarité</li>
+            <li>L’état des présences aux cours</li>
+            <li>Les évaluations programmées</li>
+            <li>Les notes et moyennes</li>
+            <li>Et toute autre information communiquée par l’établissement scolaire</li>
+        </ul>
+
+        <h4>3. Accès à l’application et éligibilité</h4>
+        <p>a. Réservé aux parents d’élèves inscrits dans des établissements partenaires.</p>
+        <p>b. Seuls les parents ayant souscrit via leur établissement scolaire peuvent créer un compte et bénéficier des services.</p>
+
+        <h4>4. Engagements des utilisateurs</h4>
+        <ul>
+            <li>Fournir des informations exactes et à jour lors de la création du compte</li>
+            <li>Utiliser l’application dans le respect des lois en vigueur</li>
+            <li>Respecter les principes et valeurs promus par BABISCHOOL</li>
+            <li>S’abstenir de piratage, clonage ou sabotage du système</li>
+            <li>Ne pas diffuser de contenus illicites</li>
+        </ul>
+
+        <h4>5. Création de compte</h4>
+        <p>L’inscription nécessite un compte personnel. Les identifiants sont strictement personnels et confidentiels. L’utilisateur est responsable de la sécurité de son compte.</p>
+
+        <h4>6. Protection des données personnelles</h4>
+        <p>Les données collectées sont utilisées uniquement pour le suivi scolaire. Elles ne sont ni vendues ni partagées sans autorisation. Chaque utilisateur dispose d’un droit d’accès, rectification et suppression de ses données.</p>
+
+        <h4>7. Propriété intellectuelle</h4>
+        <p>BABISCHOOL est la propriété exclusive d’IPLUS-CI. Toute reproduction ou exploitation non autorisée est interdite.</p>
+
+        <h4>8. Limitation de responsabilité</h4>
+        <p>IPLUS-CI met tout en œuvre pour garantir le bon fonctionnement, mais ne peut être tenue responsable des interruptions, erreurs techniques ou dommages liés à une mauvaise utilisation.</p>
+
+        <h4>9. Modification des CGU</h4>
+        <p>IPLUS-CI peut modifier les CGU à tout moment. L’utilisation continue de l’application après notification vaut acceptation.</p>
+
+        <h4>10. Suspension et résiliation</h4>
+        <p>IPLUS-CI peut suspendre ou résilier un compte en cas de non-respect. L’utilisateur peut demander la suppression de son compte.</p>
+
+        <h4>11. Loi applicable</h4>
+        <p>Les CGU sont régies par le droit ivoirien. Tout litige sera soumis aux juridictions compétentes d’Abidjan.</p>
+    </div>
+</section>
+
+<!-- À propos -->
+<section id="about" class="container my-5 fade-in section-container">
+    <h2 class="section-title">À propos de BABISCHOOL</h2>
+    <div class="section-content">
+        <p>BABISCHOOL est conçue pour aider les parents à suivre la scolarité de leurs enfants en toute simplicité et en temps réel.</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-links">
+        <a href="#conditions">Conditions Générales</a>
+    </div>
+    <p>&copy; 2025 masterj. Tous droits réservés.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
